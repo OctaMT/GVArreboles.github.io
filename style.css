@@ -1,0 +1,353 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*propiedad de flex para todos*/
+}
+
+.arreboles {
+  text-align: center;
+}
+
+.arreboles img {
+  width: 100%;
+  /* defino el ancho que ocupe toda la pantalla */
+  max-width: 600px;
+}
+
+
+.elgrupo {
+  color: black;
+  -webkit-text-stroke: 1px orange;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 30px;
+  background-color: white;
+}
+
+.Integrantes {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  -webkit-text-stroke: 1px orange;
+  color: black;
+  text-align: center;
+  margin: 30px;
+  background-color: white;
+}
+
+.ListadoIntegrantes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+/* el simbolo > hace referencia a las etiquetas que sean hijos unicamente*/
+.ListadoIntegrantes>div {
+  justify-content: center;
+  display: flex;
+  width: 600px;
+  padding: 20px;
+  background-color: rgb(43, 41, 41);
+  gap: 50px;
+  flex-direction: row;
+}
+
+.dire {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  -webkit-text-stroke: 1px #000;
+}
+
+.barito {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  -webkit-text-stroke: 1px #000;
+}
+
+.sopra {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  -webkit-text-stroke: 1px #000;
+}
+
+.contra {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  -webkit-text-stroke: 1px #000;
+}
+
+.sopranos {
+  display: flex;
+}
+
+.cartas {
+  display: flex;
+  gap: 20px;
+}
+
+div.divNaranja {
+  background-color: orange;
+}
+
+.galeria {
+  margin: 30px;
+  background-color: white;
+  color: black;
+  -webkit-text-stroke: 1px orange;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* CARRUSEL */
+.carrusel {
+  margin-top: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.swiper {
+  width: 100%;
+  height: 500px;
+  max-width: 1300px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background-color: rgb(43, 41, 41);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  /* cover: PARA QUE CUBRA TODO */
+}
+
+.swiper-button-next {
+  color: orange;
+}
+
+.swiper-button-prev {
+  color: orange;
+}
+
+
+.pastorela {
+  margin-top: 40px;
+  margin-right: 20px;
+}
+
+.petalodesal {
+  margin-top: 40px;
+  margin-left: 20px;
+  border: white;
+
+}
+
+.QR {
+  border-radius: 10px;
+}
+
+/*footer*/
+footer {
+  display: flex;
+  margin-top: 70px;
+}
+
+.insta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.redesdelcoro{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.instados {
+  display: flex;
+  background: 0;
+  border: 0;
+  margin-right: 10px;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.yutu {
+  display: flex;
+  background: 0;
+  border: 0;
+  align-items: center;
+  margin-right: 20px;
+
+}
+
+.contacto {
+  font-size: 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* carta */
+article.card {
+  border: 1px black solid;
+  position: relative;
+  width: 230px;
+  height: 370px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card svg {
+  fill: #000;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-radius: 3px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px #000000;
+  background-color: #f2f2f2;
+  color: #ffffff;
+}
+
+.card__content {
+  color: #000000;
+  position: absolute;
+  top: 30;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover .card__content {
+  transform: rotateX(0deg);
+}
+
+.card__title {
+  margin: 0;
+  padding-left: 5px;
+  font-size: 24px;
+  color: #000000;
+  font-weight: 700;
+}
+
+.card:hover svg {
+  scale: 0;
+}
+
+.card__description {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #000000;
+  line-height: 1.4;
+}
+
+/* Commands to change the shadows in dark mode
+@media (prefers-color-scheme: dark) {
+  .card:hover {
+  box-shadow: 0 8px 16px #000000;
+  }
+}*/
+
+/*background*/
+body {
+  text-align: center;
+  margin: auto;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: auto;
+  background: linear-gradient(315deg, rgb(249, 240, 0) 3%, rgb(206, 182, 60) 38%, rgb(238, 156, 48) 68%, rgb(255, 44, 25) 98%);
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
+
+}
+
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  50% {
+    background-position: 100% 100%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.wave {
+  background: rgb(255 255 255 / 25%);
+  border-radius: 1000% 1000% 0 0;
+  position: fixed;
+  width: 200%;
+  height: 12em;
+  animation: wave 10s -3s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.8;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+  bottom: -1.25em;
+  animation: wave 18s linear reverse infinite;
+  opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+  bottom: -2.5em;
+  animation: wave 20s -1s reverse infinite;
+  opacity: 0.9;
+}
+
+@keyframes wave {
+  2% {
+    transform: translateX(1);
+  }
+
+  25% {
+    transform: translateX(-25%);
+  }
+
+  50% {
+    transform: translateX(-50%);
+  }
+
+  75% {
+    transform: translateX(-25%);
+  }
+
+  100% {
+    transform: translateX(1);
+  }
+}
